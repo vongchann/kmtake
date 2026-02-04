@@ -53,3 +53,11 @@ jobs:
           path: |
             coverage.xml
             htmlcov/
+
+      - name: Upload coverage to Codecov
+        if: always()
+        uses: codecov/codecov-action@v4
+        with:
+          files: coverage.xml
+          flags: unittests
+          fail_ci_if_error: false
