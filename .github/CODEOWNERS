@@ -1,0 +1,4 @@
+# Code owners assign reviewers for changes
+/myapp/ @vongchann
+/tests/ @vongchann
+/.github/ @vongchann
